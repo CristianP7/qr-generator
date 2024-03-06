@@ -63,3 +63,17 @@ body{
 .contenedorQR{
     margin: 2.5rem auto 0 auto;
 }
+
+@media screen and (max-width:575px){
+
+    .contenedor{
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width:505px){
+    .contenedor{
+        max-width: 350px;
+        text-align: center;
+    }
+}

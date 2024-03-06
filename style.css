@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-size: 16px;
     font-family: 'Poppins';
     width: 100%;
@@ -16,8 +16,9 @@ body{
     align-items: center;
 }
 
-.contenedor{
+.contenedor {
     min-width: 18.75rem;
+    max-height: 43.75rem;
     padding: 2.5rem 3.75rem;
     background: rgba(255, 255, 255, 0.205);
     border-radius: 1rem;
@@ -26,11 +27,11 @@ body{
     border: 0.0625rem solid rgba(255, 255, 255, 0.4);
 }
 
-.tittle{
+.tittle {
     font-size: 2.5rem;
 }
 
-.link{
+.link {
     border: 0.0625rem solid rgb(0, 0, 0);
     fill-opacity: 1px;
     padding: 0.75rem 0.5rem;
@@ -38,13 +39,13 @@ body{
     font-size: .99rem;
 }
 
-::placeholder{
+::placeholder {
     color: #00000094;
 
 }
 
-.btn{
-    background-color:#000000;
+.btn {
+    background-color: #000000;
     padding: 0.875rem 0;
     border: none;
     font-size: .99rem;
@@ -55,41 +56,55 @@ body{
     letter-spacing: 0.0625rem;
 }
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.contenedorQR{
+.contenedorQR {
     margin: 2rem auto 0 auto;
 }
 
-.attribution{
+.attribution {
     margin-top: 0.625rem;
 }
 
-.text{
+.text {
     font-size: .9rem;
     font-weight: 400;
 }
 
-a{
+a {
     color: #000000;
 }
 
+@media screen and (max-width:1366px) {
+    .contenedor {
+        max-height: 580px;
+        padding: 1.25rem 1.5rem;
 
+    }
 
-@media screen and (max-width:575px){
+}
 
-    .contenedor{
+@media screen and (max-width:575px) {
+
+    .contenedor {
         padding: 1rem 2rem;
     }
 }
 
-@media screen and (max-width:505px){
-    .contenedor{
+@media screen and (max-width:505px) {
+    .contenedor {
         max-width: 350px;
         text-align: center;
+        padding: 0;
+    }
+
+    .contenedorQR {
+        width: 200px;
+        height: 100px;
+
     }
 }

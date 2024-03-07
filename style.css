@@ -105,6 +105,20 @@ a {
     .contenedorQR {
         width: 200px;
         height: 100px;
-
     }
+}
+
+@media screen and (max-width:492px){
+    .contenedor{
+        max-width: 300px;
+        padding: 20px 20px 160px 20px;
+    }
+
+    .contenedorQR {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+    }
+
 }
